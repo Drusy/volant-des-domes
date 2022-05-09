@@ -1,0 +1,64 @@
+app_name: Volant des Dômes
+app_subtitle: Application officielle du Volant des Dômes
+app_download: https://apps.apple.com/app/id1431822237
+app_github: 
+app_id: 1431822237
+email: kevin.renella@gmail.com
+app_icon: /assets/icon.png
+favicon: /assets/icon.png
+
+made_by: Made by [Drusy](https://github.com/drusy)
+
+links:
+  - title: Donation
+    url: https://paypal.me/kevinrenella
+  - title: Site VDD
+    url: https://www.volantdesdomes.fr
+  - title: Auvergne Webcams
+    url: https://drusy.github.io/auvergne-webcams
+
+app_description: |
+    Application officielle du Volant des Dômes
+
+    <br />Application officielle du Volant des Dômes, club de badminton à Clermont-Ferrand.
+    - Retrouvez toutes les actualités du club
+    - Recevez des notifications lors de la publication de nouveaux articles
+    - Consultez les créneaux de tous les gymnases directement depuis le calendrier de votre smartphone
+    - Inscrivez-vous aux tournois
+    - Consultez le classement des joueurs
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+plugins:
+  - jekyll-postcss
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+include: ["node_modules/tailwindcss"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - .gitignore
+  - node_modules
+
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: "assets/screenshots"
+    values:
+      screenshot: true
